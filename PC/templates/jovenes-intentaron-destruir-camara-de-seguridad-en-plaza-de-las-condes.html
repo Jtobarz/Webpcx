@@ -1,0 +1,187 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!-- Facebook -->
+<meta property="og:site_name" content="webpcx.cl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jóvenes intentaron destruir cámara de seguridad en plaza de Las Condes">
+<meta property="og:description" content="La plaza Loma Larga fue intervenida hace 20 días, con un sistema de camaras y boton de panico">
+<meta property="og:url" content="http://www.webpcx.cl/jovenes-intentaron-destruir-camara-de-seguridad-en-plaza-de-las-condes.html">
+<meta property="og:image" content="http://www.chvnoticias.cl/noticias/site/artic/20170725/imag/foto_0000001220170725212854.jpg">
+<!-- /Facebook -->
+
+  <title>Jóvenes intentaron destruir cámara de seguridad en plaza de Las Condes</title>
+  
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'animate-css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'Morphext-2.4.4/morphext.css' %}">
+  <link rel="stylesheet" href="{% static 'css/webpcx.css' %}">
+  
+</head>
+
+
+<body >
+<!-- ==========INTRO================-->
+<div class="header">
+      <div class="fondo-header">
+        <header >
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'Webpcx:index' %}"><span class="logo-prim">Web</span><span class="logo-sec">Pcx</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="miNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class=""><a href="{% url 'Webpcx:index' %}">Inicio</a></li>
+                <li class=""><a href="{% url 'Webpcx:Servicios' %}">Servicios</a></li>
+                <li class=""><a href="{% url 'Webpcx:Contacto' %}">Contacto</a></li>
+                <li class="active"><a href="{% url 'Webpcx:Noticias' %}">Noticias</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
+
+<section id="introServicio">
+    <div class="container-intro">
+    <div class="">
+      <div class="intro-logo wow fadeInDown">
+        <img src="{% static 'img/webpcx_png.png' %}" width="950px" alt="logopcx">
+      </div>
+      <h1 class="wow fadeInUp">Noticias</h1>
+    </div>
+  </div>
+      </div>
+    </div>
+</section>
+<!-- ==========FIN MENU=============-->
+
+<!--===========CONTENIDO============-->
+<section class="servicios wow fadeInUp">
+  <div class="container">
+        <div class="row">
+           <div class="col-lg-12">
+               <h1 class="page-header">Jóvenes intentaron destruir cámara de <span class="logo-sec">seguridad en plaza de Las Condes</span>
+                 <small>Por Webpcx</small>
+               </h1>
+           </div>
+
+            <div class="col-lg-12">
+                <p><i class="fa fa-calendar"></i> 26/07/2017</p>
+                <hr>
+                <img class="img-responsive center-block" src="{% static 'img/Noticias/noticias-jovenes-las-condes.png' %}" alt="">
+                <hr>
+                <p class="text-justify">El incidente ocurrio la noche del 22 de julio donde jóvenes fueron captados mientras intentaban destruir una cámara de seguridad que se encuentra en la plaza Loma Larga, ubicada en el sector de Colón Oriente, en Las Condes.</p>
+           </div>
+
+           <div class="col-lg-6">
+                <p class="text-justify">El material fue compartido por el alcalde de la comuna de Las Condes, Joaquín Lavín, quien publico el video en sus redes sociales en una especie de "funa" a los jovenes responsables del ataque.</p>
+                <p class="text-justify">La camara atacada formaba parte de un sistema instalado y configurado por WEB<strong class="logo-sec">PCX</strong> la cual se conformaba con un sistema de Camaras Axis Q6114-E, Megafono Axis C3003-E, Boton de panico Axis 8105-E y un Enlace Inalambrico Radwin 5000.</p>
+                <p class="text-justify">Pese a sus intentos, la cámara cuenta con una estructura  antivandálica y los daños realizados solo fueron en la mica protectora de esta.</p>
+           </div>
+
+           <div class="col-lg-6">
+               <iframe class="embed-responsive-item" width="100%" height="350" src="https://www.youtube.com/embed/tUH8pxhNbfI" frameborder="0" allowfullscreen></iframe>
+           </div>
+
+           <div class="col-lg-12">
+               
+                <p class="text-justify">Pese a sus intentos, no lograron su objetivo y sus rostros quedaron grabados, por lo que el alcalde , anunció que se seguirán cargos judiciales en contra de estas personas.</p>
+           <hr>  
+           </div>
+
+           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+              <iframe target="blank" src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwebpcx.cl%2Fjovenes-intentaron-destruir-camara-de-seguridad-en-plaza-de-las-condes.html&layout=button_count&size=large&mobile_iframe=true&width=116&height=28&appId" width="116" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+           </div>
+           
+           <!--=======BOTON TWIITER=======--
+           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+               <a href="#"><img class="img-rounded img-responsive" src="img/twitter.jpg" width="100%" alt=""></a>   
+           </div> 
+               =======BOTON TWIITER=======-->           
+
+    </div>
+  </div>
+</section>
+                    
+
+
+<!--===========FIN CONTENIDO========-->
+
+<!--===========FOOTER===============-->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-6 ">
+          <div class="wow fadeInDown">
+          <div class="footer-icon">
+            <img src="{% static 'img/webpcx_png.png' %}" width="250px" class="img-responsive">
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="wow fadeInDown">
+            <div class="footer-icon center-block">
+               <ul>
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+                   </span> Lunes - Viernes, 9am a 7pm
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                   </span> (+56 35)2442827 <a href="tel:+56352442827"><button class="btn-llamar hidden-lg hidden-md">Llamanos</button></a>
+                 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+</footer>
+
+<div class="footer-abajo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               Copyright &copy; Webpcx Ingenieria Ltda 2017.
+            </div>
+        </div>
+    </div>
+</div>
+<!--===========FIN FOOTER===========-->
+
+
+<!-- JQUERY -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!--FIN JQUERY-->
+
+<!-- JAVASCRIPT -->
+ <script src="{% static 'js/bootstrap.min.js' %}"></script>
+ <script src="{% static 'Morphext-2.4.4/morphext.min.js' %}"></script>
+ <script src="{% static 'js/Efectos.js' %}"></script>
+ <script src="{% static 'WOW-master/wow.min.js' %}"></script>
+<!--FIN JAVASCRIPT -->
+
+ <!--SCRIPT CHAT-->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=67705747"></script>
+<!--SCRIPT CHAT-->
+<!--FIN JAVASCRIPT -->
+</body>
+</html>

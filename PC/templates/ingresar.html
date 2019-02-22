@@ -1,0 +1,251 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta property="og:title" content="Webpcx - Tecnologia en Evolucion" />
+  <meta property="og:description" content="Camaras y Sistemas de seguirdad- Soporte y redes" />
+  <meta property="og:image" content="http://webpcx.cl/img/webpcx_png.png" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />      
+  <meta property="og:url" content="http://www.webpcx.cl" />
+
+  <title>Ingresar Noticias</title>
+  
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'animate-css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'Morphext-2.4.4/morphext.css' %}">
+  <link rel="stylesheet" href="{% static 'css/webpcx.css' %}">
+</head>
+
+<body>
+{% block contenido  %}
+<div class="header-contacto">
+      <div class="fondo-header">
+        <header >
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'Webpcx:index' %}"><span class="logo-prim">Web</span><span class="logo-sec">Pcx</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="miNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class=""><a href="{% url 'Webpcx:index' %}">Inicio</a></li>
+                <li class=""><a href="{% url 'Webpcx:Servicios' %}">Servicios</a></li>
+                <li class="active"><a href="{% url 'Webpcx:Contacto' %}">Contacto</a></li>
+                <li class=""><a href="{% url 'Webpcx:Noticias' %}">Noticias</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
+
+<section id="introServicio">
+    <div class="container-intro">
+    <div class="">
+      <div class="intro-logo wow fadeInDown">
+        <img src="{% static 'img/webpcx_png.png' %}" width="950px" alt="logopcx">
+      </div>
+      <h1 class="wow fadeInUp">Ingresar Noticias</h1>
+    </div>
+  </div>
+      </div>
+    </div>
+</section>
+<!-- ==========FIN MENU=============-->
+
+
+<!--===============CONTACTO===============-->
+
+<section class="servicios wow fadeInUp">
+  <div class="container">
+    <div class="row">
+       <div class="col-lg-12">
+         <h2>Ingresar<span class="logo-sec"> Noticias</span></h2>
+         <br>
+       </div>
+
+             <div class="col-md-5">
+               <form class="NuevaNoti" name="formwebpcx" method="POST" enctype="multipart/form-data"> 
+                 {% csrf_token %}
+
+                  <!--Titulo-->
+                <div class="input-group">
+                    
+                     <input name="titulo" type="text" id="titulo" class="form-control" placeholder="Titulo.." data-validation-required-message="Porfavor Ingresa Tu Nombre.">
+                     <i class="form-control-feedback"></i>
+                     <p class="help-block text-danger"></p>
+                  
+                  <!--fecha-->
+                 
+                     <input name="fecha" type="date" id="fecha" class="form-control" placeholder="Fecha.." required data-validation-required-message="Porfavor Ingresa Tu Mail">
+                     <i class="form-control-feedback"></i>
+                     <p class="help-block text-danger"></p>
+                  
+                  <!--Descripcion-->
+                  
+                     <textarea name="descripcion" id="descripcion" class="form-control" placeholder="Descripcion.." rows="5"></textarea>
+                     <i class="form-control-feedback"></i>
+                     <p class="help-block text-danger"></p>
+
+                  <!--Link-->
+                  
+                      <input name="link" type="url" id="link" class="form-control" placeholder="Enlace..." rows="5"></input>
+                      <i class="form-control-feedback"></i>
+                      <p class="help-block text-danger"></p>
+
+                  <!--imagen-->
+                      <input name="imagen" type="file" id="imagen" onkeypress="return valida(event)" class="form-control" placeholder="Imagen.." required data-validation-required-message="Porfavor Ingresa Tu Numero Telefonico">
+                      <i class="form-control-feedback"></i>
+                      <p class="help-block text-danger"></p>
+
+                  <!--Guardar-->
+
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+               </form>
+             </div>
+             {% csrf_token %}
+            <br>
+             <div class="col-md-7">
+               <p class="text-justify">Ingrese los datos especificiados en la pagina, de esta manera se subira los datos a nuestra pagina de Noticias de WebPcX</p>
+              <div class="footer-icon">
+               <ul>
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+                   </span> Lunes - Viernes, 9am a 7pm
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                   </span>(+56 35)2442827 <a href="tel:+56352442827"><button class="btn-llamar hidden-lg hidden-md">Llamanos</button></a>
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                   </span> info@webpcx.cl
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                   </span>Av.Arturo Phillips #325 Santo Domingo.
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                   </span><a href="https://www.facebook.com/webpcx">Webpcx Facebook</a>
+                 </li>
+
+               </ul>
+              </div>
+             </div>
+  </div>
+</section>
+
+<!--===============FIN CONTACTO===============-->
+
+
+<!--===========FOOTER===============-->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-6 ">
+          <div class="wow fadeInDown">
+          <div class="footer-icon">
+            <img src="{% static 'img/webpcx_png.png' %}" width="250px" class="img-responsive">
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="wow fadeInDown">
+            <div class="footer-icon center-block">
+               <ul>
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+                   </span> Lunes - Viernes, 9am a 7pm
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                   </span> (+56 35)2442827 <a href="tel:+56352442827"><button class="btn-llamar hidden-lg hidden-md">Llamanos</button></a>
+                 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+</footer>
+
+<div class="footer-abajo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               Copyright &copy; Webpcx Ingenieria Ltda 2017.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--===========FIN FOOTER===========-->
+
+<!-- JQUERY -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!--FIN JQUERY-->
+
+<!-- JAVASCRIPT -->
+ <script src="{% static 'js/bootstrap.min.js' %}"></script>
+ <script src="{% static 'Morphext-2.4.4/morphext.min.js' %}"></script>
+ <script src="{% static 'js/Efectos.js' %}"></script>
+ <script src="{% static 'WOW-master/wow.min.js' %}"></script>
+<!--FIN JAVASCRIPT -->
+
+ <script>
+function valida(e){
+    tecla = (document.all) ? e.keyCode : e.which;
+
+    //Tecla de retroceso para borrar, siempre la permite
+    if (tecla==8)
+    {
+        return true;
+    }
+        
+    // Patron de entrada, en este caso solo acepta numeros
+    patron =/[0-9]/;
+    tecla_final = String.fromCharCode(tecla);
+    return patron.test(tecla_final);
+}
+</script>
+
+<!--SCRIPT CHAT-->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=67705747"></script>
+<!--SCRIPT CHAT-->
+
+<!--FIN JAVASCRIPT -->
+
+  {% endblock %}
+</body>
+</html>

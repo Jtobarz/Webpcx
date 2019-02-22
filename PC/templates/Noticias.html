@@ -1,0 +1,194 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="keywords" content="Instalacion de Camaras y Sistemas de seguridad, camara de seguridad, cctv e Ip, kit dvr, servidores, certificacion vms milestone, redes de fibra optica y cobre, soporte tecnico e informatico a empresas"/>
+  <meta name="description" content="Empresa especializada en servicios e instalacion de proyectos de seguridad e informatica, como cámaras y sistemas de seguridad con certificacion milestone, kit dvr, servidores, sistemas informáticos e instalaciones de redes fibra optica y cobre" />
+  <meta charset="UTF-8">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<!-- Facebook -->
+<meta property="og:site_name" content="webpcx.cl">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Webpcx | Camaras y sistemas de seguridad">
+<meta property="og:description" content="Webpcx |Camaras y sistemas de seguridad">
+<meta property="og:url" content="http://www.webpcx.cl">
+<meta property="og:image" content="http://webpcx.cl/img/empresa-certificada-milestone.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="300" /> 
+<!-- /Facebook -->
+
+
+
+
+  <title>Webpcx | Instalacion de camaras y sistemas de seguridad</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'animate-css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'Morphext-2.4.4/morphext.css' %}">
+  <link rel="stylesheet" href="{% static 'css/webpcx.css' %}">
+
+</head>
+
+
+<body >
+<!-- ==========MENU=================-->
+ 
+    <!--HEADER-->
+    <div class="header">
+      <div class="fondo-header">
+        <header >
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'Webpcx:index' %}"><span class="logo-prim">Web</span><span class="logo-sec">Pcx</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="miNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="{% url 'Webpcx:index' %}">Inicio</a></li>
+                <li class=""><a href="{% url 'Webpcx:Servicios' %}">Servicios</a></li>
+                <li class=""><a href="{% url 'Webpcx:Contacto' %}">Contacto</a></li>
+                <li class=""><a href="{% url 'Webpcx:Noticias' %}">Noticias</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
+
+<section id="introServicio">
+    <div class="container-intro">
+       <div class="responsivo">
+           <div class="intro-logo wow fadeInDown">
+             <img src="{% static 'img/webpcx_png.png'%}" width="950px" alt="logopcx">
+           </div>
+      <h1 class="rotador wow fadeInUp">Camaras de seguridad, Sistemas De seguridad, Dvr y Servidores,Soporte Tecnico e Informatico, Instalacion Redes de Fibra Optica y Cobre</h1>
+       </div>
+    </div>
+      </div>
+  </div>
+</section>
+<!-- ==========FIN MENU=============-->
+
+<!--===========CONTENIDO============-->
+
+<section class="servicios wow fadeInUp">
+    <div class="container">
+      <div class="row">
+         <div class="col-lg-12">
+           <h2>Lista d<span class="logo-sec">e Noticias</span></h2>
+           <br>
+         </div>
+  
+               <div class="col-md-12">
+
+                {% for Webpcx in list %}
+                  <!--
+                  {{Webpcx.titulo}} referencia al titulo en la base de datos
+                  <br>
+                  {{Webpcx.fecha}} referencia a la fecha en la base de datos
+                  <br>
+                  {{Webpcx.descripcion}} referencia a la descripcion en la base de datos
+                  <br>
+                  {{Webpcx.link}} referencia al enlace en la base de datos
+                  <br>
+                  {{Webpcx.imagen}} referencia a la imagen en la base de datos
+                  -->
+                <h2>
+                    <a href="{{Webpcx.link}}" target="_blank">{{Webpcx.titulo}}</a>
+                  </h2>
+                  <p>{{Webpcx.fecha}}</p>
+                  <hr>
+                    <img class="img-responsive center-block" src="{{Webpcx.imagen.url}}" alt="">
+                  <hr>
+                  <p>{{Webpcx.descripcion}}</p>
+                  <a class="btn btn-primary" href="{{Webpcx.link}}" target="_blank">Leer Mas....</a>
+  
+                  <hr>
+                  {% endfor %}
+               </div>
+               <ul class="pager">
+                  <li class="previous">
+                      <a href="#">&larr; Anterior</a>
+                  </li>
+                  <li class="new">
+                    <a href="{% url 'Webpcx:ingresar' %}">Nueva Noticia</a>
+                  </li>
+                  <li class="next">
+                      <a href="#">Siguiente &rarr;</a>
+                  </li>
+              </ul>
+              <br>
+    </div>
+  </section>
+<!--===========FIN CONTENIDO========-->
+
+<!--===========FOOTER===============-->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-6 ">
+          <div class="wow fadeInDown">
+          <div class="footer-icon">
+            <img src="{% static 'img/webpcx_png.png' %}" width="250px" class="img-responsive">
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="wow fadeInDown">
+            <div class="footer-icon center-block">
+               <ul>
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+                   </span> Lunes - Viernes, 9am a 7pm
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                   </span> (+56 35)2442827 <a href="tel:+56352442827"><button class="btn-llamar hidden-lg hidden-md">Llamanos</button></a>
+                 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+</footer>
+
+<div class="footer-abajo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               Copyright &copy; Webpcx Ingenieria Ltda 2017.
+            </div>
+        </div>
+    </div>
+</div>
+<!--===========FIN FOOTER===========-->
+
+<!-- JQUERY -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!--FIN JQUERY-->
+
+<!-- JAVASCRIPT -->
+ <script src="{% static 'js/bootstrap.min.js' %}"></script>
+ <script src="{% static 'Morphext-2.4.4/morphext.min.js' %}"></script>
+ <script src="{% static 'js/Efectos.js' %}"></script>
+ <script src="{% static 'WOW-master/wow.min.js' %}"></script>
+<!--FIN JAVASCRIPT -->
+
+<!--SCRIPT CHAT-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=67705747"></script>
+<!--SCRIPT CHAT-->
+</body>
+</html>

@@ -1,0 +1,347 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta property="og:title" content="Webpcx - Tecnologia en Evolucion" />
+  <meta property="og:description" content="Camaras y Sistemas de seguirdad- Soporte y redes" />
+  <meta property="og:image" content="http://webpcx.cl/img/webpcx_png.png" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />      
+  <meta property="og:url" content="http://www.webpcx.cl" />
+
+  <title>Servicios</title>
+  
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'animate-css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'Morphext-2.4.4/morphext.css' %}">
+  <link rel="stylesheet" href="{% static 'css/webpcx.css' %}">
+
+</head>
+
+
+<body >
+<!-- ==========MENU=================-->
+    <div class="header-servicios">
+      <div class="fondo-header">
+        <header >
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'Webpcx:index' %}"><span class="logo-prim">Web</span><span class="logo-sec">Pcx</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="miNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class=""><a href="{% url 'Webpcx:index' %}">Inicio</a></li>
+                <li class="active"><a href="{% url 'Webpcx:Servicios' %}">Servicios</a></li>
+                <li class=""><a href="{% url 'Webpcx:Contacto' %}">Contacto</a></li>
+                <li class=""><a href="{% url 'Webpcx:Noticias' %}">Noticias</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
+
+<section id="introServicio">
+    <div class="container-intro">
+    <div class="">
+      <div class="intro-logo wow fadeInDown">
+        <img src="{% static 'img/webpcx_png.png' %}" width="950px" alt="logopcx">
+      </div>
+      <h1 class="wow fadeInUp">Servicios</h1>
+    </div>
+  </div>
+      </div>
+    </div>
+</section>
+<!-- ==========FIN MENU=============-->
+
+<!--===========SERVICIOS============-->
+<section class="servicios">
+ <div class="container wow fadeInUp">
+   <div class="row">
+     <div role="tabpanel">
+        <div class="col-md-3">
+            <h3 class="text-center">Servicios</h3>
+              <ul class="nav nav-pills nav-stacked" role="tablist">
+                 <li role="presentation" class="brand-nav active"><a href="#camaras" aria-controls="camaras" role="tab" data-toggle="tab">Camaras de Vigilancia y Sistemas De Seguridad</a></li>
+                 <li role="presentation" class="brand-nav"><a href="#soporte" aria-controls="soporte" role="tab" data-toggle="tab">Soporte Informatico e Instalacion de Redes</a></li>
+                 <li role="presentation" class="brand-nav"><a href="#destacado" aria-controls="destacado" role="tab" data-toggle="tab">Servicios Destacados</a></li>
+              </ul>
+        </div>
+                
+   <div class="tab-content">
+     <div role="tabpanel" class="tab-pane active" id="camaras">
+       <article>
+         <div class="col-md-9">
+           <h1 class="page-header">Camaras de Vigilancia y <span class="logo-sec">Sistemas De Seguridad</span></h1>
+         
+
+         <p class="text-justify col-lg-12">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore pariatur nulla sed! Facere aliquam quidem quis hic, optio ab harum, est nam cumque! Debitis eos, eaque, doloremque nobis sequi sapiente!
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maxime non, atque nulla amet. Officia sed mollitia illo quis, vel veniam officiis qui repellendus deleniti impedit assumenda voluptatum earum quae!
+         </p>
+
+         <p class="text-justify col-lg-12">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore pariatur nulla sed! Facere aliquam quidem quis hic, optio ab harum, est nam cumque! Debitis eos, eaque, doloremque nobis sequi sapiente!
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maxime non, atque nulla amet. Officia sed mollitia illo quis, vel veniam officiis qui repellendus deleniti impedit assumenda voluptatum earum quae!
+         </p>
+        <div class="col-lg-12 parrafo-centrado">
+        <img src="{% static 'img/milestone-software.png' %}" class="img-responsive center-block" width="90%" alt="" />
+        </div>
+         <div class="col-lg-4 col-md-4 col-sm-4 parrafo-centrado">
+           <h3><i class="fa fa-cog" ></i> Lorem</h3>
+           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et dolor dolorem nostrum nihil.</p>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-4 parrafo-centrado">
+           <h3><i class="fa fa-cog" ></i>Lorem</h3>
+           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et dolor dolorem nostrum nihil.</p>
+         </div>
+
+         <div class="col-lg-4 col-md-4 col-sm-4 parrafo-centrado">
+           <h3><i class="fa fa-cog" ></i>Lorem</h3>
+           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et dolor dolorem nostrum nihil.</p>
+         </div>
+
+         <div class="col-lg-4 col-md-4 col-sm-4 parrafo-centrado">
+           <h3><i class="fa fa-cog" ></i>Lorem</h3>
+           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et dolor dolorem nostrum nihil.</p>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-4 parrafo-centrado">
+           <h3><i class="fa fa-cog" ></i>Lorem</h3>
+           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et dolor dolorem nostrum nihil.</p>
+         </div>
+
+         <div class="col-lg-4 col-md-4 col-sm-4 parrafo-centrado">
+           <h3><i class="fa fa-cog" ></i>Lorem</h3>
+           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et dolor dolorem nostrum nihil.</p>
+         </div>
+
+         <p class="text-justify col-lg-12 parrafo-centrado">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore pariatur nulla sed! Facere aliquam quidem quis hic, optio ab harum, est nam cumque! Debitis eos, eaque, doloremque nobis sequi sapiente!
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni maxime non, atque nulla amet. Officia sed mollitia illo quis, vel veniam officiis qui repellendus deleniti impedit assumenda voluptatum earum quae!
+         </p>
+       </article>
+     </div>
+     <div role="tabpanel" class="tab-pane" id="soporte">
+       <article>
+         <div class="col-md-9">
+         <h1 class="page-header">Soporte Informatico <span class="logo-sec">e Instalacion de Redes</span></h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis recusandae laborum earum est maxime. Repudiandae magni, omnis iste. Adipisci provident atque ducimus temporibus, fugit impedit minus consectetur, ipsum omnis consequuntur!</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis recusandae laborum earum est maxime. Repudiandae magni, omnis iste. Adipisci provident atque ducimus temporibus, fugit impedit minus consectetur, ipsum omnis consequuntur!</p>
+        </div>
+       </article>
+     </div>
+
+          <div role="tabpanel" class="tab-pane" id="destacado">
+       <article>
+         <div class="col-md-9">
+         <h1 class="page-header">Servicios <span class="logo-sec">Destacados</span></h1>
+         <p class="text-justify">
+          A continuación un breve detalle de algunos de los principales clientes y proyectos
+          desarrollados en el último tiempo.
+        </p>
+  <table class="table">
+    <thead>
+      <tr class="success">
+        <th>Cliente</th>
+        <th>Proyecto</th>
+      </tr>
+    </thead>
+    <tbody>    
+      <tr>
+        <td><br><br><br>I. Municipalidad de Santo Domingo</td>
+        <td>
+          <ul>
+            <li>Instalación redes de fibra óptica y cobre.</li>
+            <li>Instalación cámaras de seguridad.</li>
+            <li>Instalación software VMS.</li>
+            <li>Instalación analítica de Patentes.</li>
+            <li>Instalación enlaces robustos de largo alcance.</li>
+            <li>Mantención de sistemas informáticos (VMS).</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br>Gráneles de Chile</td>
+        <td>
+          <ul>
+            <li>Instalación enlaces robustos de largo alcance.</li>
+            <li>Instalación sistema CCTV.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Citroën Chile</td>
+        <td>
+          <ul>
+            <li>Instalación y configuración del VMS Milestones en 03 plantas.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br>Securitas Chile.</td>
+        <td>
+          <ul>
+            <li>Instalación de sistema VMS Milestone en cliente.</li>
+            <li>Instalación sistema CCTV.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br><br>I. Municipalidad de Cartagena.</td>
+        <td>
+          <ul>
+            <li>Instalación redes de fibra óptica y cobre.</li>
+            <li>Instalación cámaras de seguridad.</li>
+            <li>Instalación software VMS.</li>
+            <li>Instalación enlaces robustos de largo alcance.</li>
+            <li>Mantención de sistemas informáticos (VMS)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br><br>I. Municipalidad de El Quisco.</td>
+        <td>
+          <ul>
+            <li>Instalación redes de fibra óptica y cobre.</li>
+            <li>Instalación cámaras de seguridad.</li>
+            <li>Instalación software VMS.</li>
+            <li>Instalación enlaces robustos de largo alcance.</li>
+            <li>Mantención de sistemas informáticos (VMS)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br>Embotelladora ANDINA (Coca – Cola)</td>
+        <td>
+          <ul>
+            <li>Mantención del sistema VMS MILESTONE.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br>Casino del Pacifico San Antonio.</td>
+        <td>
+          <ul>
+            <li>Instalación cámaras de seguridad.</li>
+            <li>Mantención matriz GVI.</li>
+            <li>Mantención Sistema CCTV.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br>SONDA S.A.</td>
+        <td>
+          <ul>
+            <li>Instalación CCTV DATA CENTER Sala 1.</li>
+            <li>Instalación CCTV DATA CENTER Sala 5.</li>
+            <li>Configuración sistema VMS MILESTONE.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><br>Gran Casino Los Ángeles.</td>
+        <td>
+          <ul>
+            <li>Instalación cámaras de seguridad.</li>
+            <li>Mantención matriz PELCO.</li>
+            <li>Mantención Sistema CCTV.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+       </article>
+     </div>
+               </div>
+             </div>
+         </div>
+     </div>
+  </div>
+
+</section>
+
+
+
+<!--===========SERVICIOS============-->
+
+<!--===========FOOTER===============-->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-6 ">
+          <div class="wow fadeInDown">
+          <div class="footer-icon">
+            <img src="{% static 'img/webpcx_png.png' %}" width="250px" class="img-responsive">
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="wow fadeInDown">
+            <div class="footer-icon center-block">
+               <ul>
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+                   </span> Lunes - Viernes, 9am a 7pm
+                 </li>
+
+                 <li>
+                   <span class="fa-stack fa-lg">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                   </span> (+56 35)2442827 <a href="tel:+56352442827"><button class="btn-llamar hidden-lg hidden-md">Llamanos</button></a>
+                 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+</footer>
+
+<div class="footer-abajo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               Copyright &copy; Webpcx Ingenieria Ltda 2017.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--===========FIN FOOTER===========-->
+
+
+<!-- JQUERY -->
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+<!--FIN JQUERY-->
+
+<!-- JAVASCRIPT -->
+ <script src="{% static 'js/bootstrap.min.js' %}"></script>
+ <script src="{% static 'Morphext-2.4.4/morphext.min.js' %}"></script>
+ <script src="{% static 'js/Efectos.js' %}"></script>
+ <script src="{% static 'WOW-master/wow.min.js' %}"></script>
+<!--FIN JAVASCRIPT -->
+
+
+
+<!--SCRIPT CHAT-->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=67705747"></script>
+<!--SCRIPT CHAT-->
+
+</body>
+</html>
